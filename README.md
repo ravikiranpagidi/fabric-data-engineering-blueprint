@@ -62,18 +62,18 @@ Read the full [topic README template](docs/topic-readme-template.md) and [bluepr
 
 ## Planned Blueprint Portfolio
 
-Planned folders are created only when implementation work begins and the assets can meet the release gate.
+Each planned folder now contains a substantive scaffold with its scenario, implementation plan, diagram brief, sample contract, test plan, and demo outline. These folders are not Active implementations yet.
 
 | Planned Folder | Primary Outcome | Fictional Scenario |
 | --- | --- | --- |
-| `microsoft-fabric-powerbi-semantic-modeling-blueprint` | Governed star schema, DAX, Direct Lake decisions, RLS, testing, and deployment | Commercial Performance Analytics |
-| `azure-databricks-unity-catalog-blueprint` | Catalog, storage, grants, isolation, fine-grained controls, audit, and lineage | Manufacturing Data Products |
-| `azure-data-engineering-cicd-blueprint` | Repeatable validation and Dev/Test/Prod promotion across Microsoft data assets | Enterprise Analytics Platform Delivery |
-| `azure-streaming-cdc-blueprint` | Resilient order and inventory CDC into Delta Lake | Retail Operations Change Processing |
-| `ai-ready-customer-360-blueprint` | Consent-aware customer data product for BI, features, and approved AI context | Omnichannel Customer 360 |
-| `azure-data-governance-purview-blueprint` | Catalog, classification, glossary, lineage, ownership, and access workflow | Retail Data Governance Office |
-| `azure-openai-rag-enterprise-blueprint` | Secured retrieval, grounding, citations, evaluation, feedback, and monitoring | Service Knowledge Assistant |
-| `fabric-data-agent-copilot-analytics-blueprint` | Governed data preparation, permissions, diagnostics, and evaluation for business Q&A | Service Operations Analytics |
+| [Microsoft Fabric Power BI Semantic Modeling](microsoft-fabric-powerbi-semantic-modeling-blueprint/README.md) | Governed star schema, DAX, Direct Lake decisions, RLS, testing, and deployment | Commercial Performance Analytics |
+| [Azure Databricks Unity Catalog](azure-databricks-unity-catalog-blueprint/README.md) | Catalog, storage, grants, isolation, fine-grained controls, audit, and lineage | Manufacturing Data Products |
+| [Azure Data Engineering CI/CD](azure-data-engineering-cicd-blueprint/README.md) | Repeatable validation and Dev/Test/Prod promotion across Microsoft data assets | Enterprise Analytics Platform Delivery |
+| [Azure Streaming And CDC](azure-streaming-cdc-blueprint/README.md) | Resilient order and inventory CDC into Delta Lake | Retail Operations Change Processing |
+| [AI-Ready Customer 360](ai-ready-customer-360-blueprint/README.md) | Consent-aware customer data product for BI, features, and approved AI context | Omnichannel Customer 360 |
+| [Azure Data Governance And Purview](azure-data-governance-purview-blueprint/README.md) | Catalog, classification, glossary, lineage, ownership, and access workflow | Retail Data Governance Office |
+| [Azure OpenAI Enterprise RAG](azure-openai-rag-enterprise-blueprint/README.md) | Secured retrieval, grounding, citations, evaluation, feedback, and monitoring | Service Knowledge Assistant |
+| [Fabric Data Agent And Copilot Analytics](fabric-data-agent-copilot-analytics-blueprint/README.md) | Governed data preparation, permissions, diagnostics, and evaluation for business Q&A | Service Operations Analytics |
 
 See the detailed [repository expansion plan](docs/repo-expansion-plan.md).
 
@@ -227,10 +227,18 @@ All scenarios and datasets are fictional.
 |-- docs/
 |-- fabric-data-engineering-blueprint/
 |-- fabric-real-time-intelligence-blueprint/
-`-- azure-lakehouse-starter-kit/
+|-- azure-lakehouse-starter-kit/
+|-- microsoft-fabric-powerbi-semantic-modeling-blueprint/  planned scaffold
+|-- azure-databricks-unity-catalog-blueprint/              planned scaffold
+|-- azure-data-engineering-cicd-blueprint/                 planned scaffold
+|-- azure-streaming-cdc-blueprint/                         planned scaffold
+|-- ai-ready-customer-360-blueprint/                       planned scaffold
+|-- azure-data-governance-purview-blueprint/               planned scaffold
+|-- azure-openai-rag-enterprise-blueprint/                 planned scaffold
+`-- fabric-data-agent-copilot-analytics-blueprint/         planned scaffold
 ```
 
-The target portfolio and recommended internal topic structure are documented in the [expansion plan](docs/repo-expansion-plan.md#4-target-repository-structure).
+The portfolio and recommended internal topic structure are documented in the [expansion plan](docs/repo-expansion-plan.md#4-updated-repository-structure).
 
 ## Contributing
 

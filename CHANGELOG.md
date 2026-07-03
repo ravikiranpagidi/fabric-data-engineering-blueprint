@@ -12,6 +12,7 @@ All notable changes to the Microsoft Data and AI learning repository will be doc
 - Added retail customer analytics sample data, JSON schemas, ADF templates, Databricks notebooks, SQL scripts, CI/CD templates, validation tests, diagrams, and topic Wiki pages for the Azure Lakehouse starter kit.
 - Added repository-wide strategy documents covering expansion topics, learning paths, architecture standards, Microsoft services, Wiki design, GitHub polish, community impact, article planning, and a 90-day roadmap.
 - Added a reusable topic README template and a blueprint release gate for future implementations.
+- Added eight Planned-status blueprint folders with topic README files, implementation plans, diagram briefs, synthetic sample contracts, test plans, and demo outlines.
 
 ### Changed
 

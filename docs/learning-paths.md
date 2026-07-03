@@ -1,6 +1,6 @@
 # Learning Paths
 
-These paths combine active and planned blueprints into role-based sequences. Active folders can be used now. Planned folders describe the intended progression and become links when implementation is released.
+These paths combine active and planned blueprints into role-based sequences. Active folders can be run now. Planned folders contain implementation scaffolds and become hands-on projects when their release gates are complete.
 
 ## Path 1: Azure Lakehouse Engineer
 
@@ -18,9 +18,9 @@ These paths combine active and planned blueprints into role-based sequences. Act
 **Recommended sequence:**
 
 1. [Azure Lakehouse Starter Kit](../azure-lakehouse-starter-kit/README.md) - Active
-2. `azure-streaming-cdc-blueprint` - Planned
-3. `azure-databricks-unity-catalog-blueprint` - Planned
-4. `azure-data-engineering-cicd-blueprint` - Planned
+2. [Azure Streaming And CDC](../azure-streaming-cdc-blueprint/README.md) - Planned scaffold
+3. [Azure Databricks Unity Catalog](../azure-databricks-unity-catalog-blueprint/README.md) - Planned scaffold
+4. [Azure Data Engineering CI/CD](../azure-data-engineering-cicd-blueprint/README.md) - Planned scaffold
 
 **Hands-on project:** Build a fictional Retail Operations Lakehouse that ingests daily master data and streams order and inventory changes. Govern plant and finance datasets with Unity Catalog, then promote the solution through Dev, Test, and Prod.
 
@@ -43,8 +43,8 @@ These paths combine active and planned blueprints into role-based sequences. Act
 
 1. [Fabric Data Engineering Blueprint](../fabric-data-engineering-blueprint/README.md) - Active
 2. [Fabric Real-Time Intelligence Blueprint](../fabric-real-time-intelligence-blueprint/README.md) - Active
-3. `microsoft-fabric-powerbi-semantic-modeling-blueprint` - Planned
-4. `fabric-data-agent-copilot-analytics-blueprint` - Planned
+3. [Microsoft Fabric Power BI Semantic Modeling](../microsoft-fabric-powerbi-semantic-modeling-blueprint/README.md) - Planned scaffold
+4. [Fabric Data Agent And Copilot Analytics](../fabric-data-agent-copilot-analytics-blueprint/README.md) - Planned scaffold
 
 **Hands-on project:** Build a fictional Service Operations analytics product with historical cases in a Lakehouse, live SLA events in Eventhouse, a governed Power BI semantic model, and a tested conversational analytics experience.
 
@@ -66,10 +66,10 @@ These paths combine active and planned blueprints into role-based sequences. Act
 **Recommended sequence:**
 
 1. [Azure Lakehouse Starter Kit](../azure-lakehouse-starter-kit/README.md) - Active foundation
-2. `ai-ready-customer-360-blueprint` - Planned
-3. `azure-data-governance-purview-blueprint` - Planned
-4. `azure-openai-rag-enterprise-blueprint` - Planned
-5. `fabric-data-agent-copilot-analytics-blueprint` - Planned comparison
+2. [AI-Ready Customer 360](../ai-ready-customer-360-blueprint/README.md) - Planned scaffold
+3. [Azure Data Governance And Purview](../azure-data-governance-purview-blueprint/README.md) - Planned scaffold
+4. [Azure OpenAI Enterprise RAG](../azure-openai-rag-enterprise-blueprint/README.md) - Planned scaffold
+5. [Fabric Data Agent And Copilot Analytics](../fabric-data-agent-copilot-analytics-blueprint/README.md) - Planned comparison
 
 **Hands-on project:** Build a fictional omnichannel Customer 360 product, catalog its business meaning and lineage, publish an approved knowledge corpus, and evaluate a secured assistant that retrieves only permitted content.
 
@@ -91,10 +91,10 @@ These paths combine active and planned blueprints into role-based sequences. Act
 **Recommended sequence:**
 
 1. [Fabric Data Engineering Blueprint](../fabric-data-engineering-blueprint/README.md) - Active
-2. `microsoft-fabric-powerbi-semantic-modeling-blueprint` - Planned
-3. `ai-ready-customer-360-blueprint` - Planned
-4. `fabric-data-agent-copilot-analytics-blueprint` - Planned
-5. `azure-data-engineering-cicd-blueprint` - Planned release track
+2. [Microsoft Fabric Power BI Semantic Modeling](../microsoft-fabric-powerbi-semantic-modeling-blueprint/README.md) - Planned scaffold
+3. [AI-Ready Customer 360](../ai-ready-customer-360-blueprint/README.md) - Planned scaffold
+4. [Fabric Data Agent And Copilot Analytics](../fabric-data-agent-copilot-analytics-blueprint/README.md) - Planned scaffold
+5. [Azure Data Engineering CI/CD](../azure-data-engineering-cicd-blueprint/README.md) - Planned release track
 
 **Hands-on project:** Create a fictional Commercial Performance model with certified sales, margin, inventory, and customer measures. Test RLS, deploy the model, and validate natural-language business questions against known results.
 
@@ -117,9 +117,9 @@ These paths combine active and planned blueprints into role-based sequences. Act
 
 1. [Azure Lakehouse Starter Kit](../azure-lakehouse-starter-kit/README.md) - Active architecture foundation
 2. [Fabric Data Engineering Blueprint](../fabric-data-engineering-blueprint/README.md) - Active Fabric foundation
-3. `azure-data-governance-purview-blueprint` - Planned
-4. `azure-databricks-unity-catalog-blueprint` - Planned
-5. `azure-data-engineering-cicd-blueprint` - Planned
+3. [Azure Data Governance And Purview](../azure-data-governance-purview-blueprint/README.md) - Planned scaffold
+4. [Azure Databricks Unity Catalog](../azure-databricks-unity-catalog-blueprint/README.md) - Planned scaffold
+5. [Azure Data Engineering CI/CD](../azure-data-engineering-cicd-blueprint/README.md) - Planned scaffold
 
 **Hands-on project:** Define a fictional multi-domain analytics platform with data owners, stewards, consumers, catalog records, least-privilege access, lineage evidence, deployment approvals, and quarterly access review.
 

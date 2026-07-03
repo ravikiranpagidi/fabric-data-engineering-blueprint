@@ -218,9 +218,9 @@ Feature prerequisites, regional availability, capacity requirements, and preview
 | Demo flow | Publish inserts and updates, observe Bronze, merge current state, replay a failed batch, verify reconciliation, show latency and alerts. |
 | Repo value | Extends batch lakehouse skills into operational data movement and complements the Fabric Real-Time Intelligence blueprint. |
 
-## 4. Target Repository Structure
+## 4. Updated Repository Structure
 
-Planned folders appear here as the target portfolio. They should not be created as empty directories.
+The planned folders now exist as useful scaffolds. Each contains a topic README, implementation plan, diagram brief, sample contract, test plan, and demo outline. They remain Planned until working assets pass the release gate.
 
 ```text
 microsoft-data-ai-learning-blueprints/
@@ -248,14 +248,14 @@ microsoft-data-ai-learning-blueprints/
 |-- fabric-data-engineering-blueprint/
 |-- fabric-real-time-intelligence-blueprint/
 |-- azure-lakehouse-starter-kit/
-|-- azure-openai-rag-enterprise-blueprint/                 planned
-|-- microsoft-fabric-powerbi-semantic-modeling-blueprint/ planned
-|-- azure-data-governance-purview-blueprint/              planned
-|-- azure-databricks-unity-catalog-blueprint/             planned
-|-- fabric-data-agent-copilot-analytics-blueprint/        planned
-|-- azure-data-engineering-cicd-blueprint/                planned
-|-- ai-ready-customer-360-blueprint/                      planned
-`-- azure-streaming-cdc-blueprint/                        planned
+|-- azure-openai-rag-enterprise-blueprint/                 planned scaffold
+|-- microsoft-fabric-powerbi-semantic-modeling-blueprint/ planned scaffold
+|-- azure-data-governance-purview-blueprint/              planned scaffold
+|-- azure-databricks-unity-catalog-blueprint/             planned scaffold
+|-- fabric-data-agent-copilot-analytics-blueprint/        planned scaffold
+|-- azure-data-engineering-cicd-blueprint/                planned scaffold
+|-- ai-ready-customer-360-blueprint/                      planned scaffold
+`-- azure-streaming-cdc-blueprint/                        planned scaffold
 ```
 
 ## 5. Recommended Topic Folder Contract
