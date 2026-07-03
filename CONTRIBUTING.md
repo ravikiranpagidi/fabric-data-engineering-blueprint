@@ -73,6 +73,36 @@ A strong topic folder usually includes:
 
 Keep topic folders independent enough that a learner can open one folder and understand how to run or study that blueprint.
 
+Use the shared [topic README template](docs/topic-readme-template.md) when proposing a new blueprint. Review the [repository expansion plan](docs/repo-expansion-plan.md) to understand the planned portfolio and avoid overlapping topics.
+
+## Blueprint Status And Release Gate
+
+Do not create an empty folder for a planned topic. A new folder should be introduced when implementation work starts and should not be listed as **Active** until it includes:
+
+- A fictional business scenario and defined audience.
+- Architecture diagram source and readable export.
+- Reproducible setup and explicit prerequisites.
+- Core code, configuration, notebook, SQL, DAX, KQL, or infrastructure assets.
+- Synthetic sample data and expected outputs.
+- Tests or deterministic validation scripts.
+- Security, governance, cost, and troubleshooting guidance.
+- A demo script and at least one extension exercise.
+- Current official documentation links and preview labels.
+
+Planned topics belong in roadmap and strategy documents until this gate is met.
+
+## Branch Naming
+
+Use short-lived branches from `main`:
+
+- `feature/<topic-or-capability>`
+- `docs/<topic-or-page>`
+- `fix/<issue-or-component>`
+- `test/<validation-area>`
+- `release/<version>` when release preparation needs isolation
+
+Branch names, commits, pull requests, review comments, and contributor records should describe the work and the people who performed it. Do not include tool or assistant identity as an author, contributor, branch prefix, or promotional label.
+
 ## How To Open a Good Issue
 
 Use the GitHub issue templates:
@@ -115,6 +145,9 @@ Before opening a pull request:
 - Prefer implementation guidance over vague recommendations.
 - When explaining a decision, include when to use it, when not to use it, and the practical recommendation.
 - When writing for beginners, explain the mental model before the implementation detail.
+- Avoid unsupported claims, confidential examples, and copied documentation text.
+- Label preview features, capacity requirements, and important platform limitations.
+- Avoid em dashes and generic filler language.
 
 ## Notebook Style
 

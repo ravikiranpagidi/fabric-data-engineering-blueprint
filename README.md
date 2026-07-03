@@ -1,183 +1,272 @@
 # Microsoft Data & AI Learning Blueprints
 
-> A practical, community-friendly learning hub for Microsoft Fabric, Power BI, Azure Data, AI, governance, CI/CD, and analytics engineering tutorials.
+[![Blueprint validation](https://github.com/ravikiranpagidi/microsoft-data-ai-learning-blueprints/actions/workflows/lint.yml/badge.svg)](https://github.com/ravikiranpagidi/microsoft-data-ai-learning-blueprints/actions/workflows/lint.yml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-2ea44f.svg)](LICENSE)
+[![Active blueprints](https://img.shields.io/badge/Active%20Blueprints-3-0078D4.svg)](#active-blueprints)
+[![Microsoft Fabric](https://img.shields.io/badge/Microsoft%20Fabric-Data%20%26%20Analytics-6f42c1.svg)](#microsoft-services-covered)
+[![Azure Data and AI](https://img.shields.io/badge/Azure-Data%20%26%20AI-0078D4.svg)](#microsoft-services-covered)
 
-This repository is being organized as a single home for Microsoft Data and AI learning projects. Each major topic lives in its own folder so the community can star, fork, watch, and contribute to one central repository while still keeping every learning path clean and focused.
+> **Practical Microsoft Data and AI implementation blueprints, from architecture decisions to tested demos.**
 
-The collection currently includes Microsoft Fabric Data Engineering, Microsoft Fabric Real-Time Intelligence, and Azure Lakehouse starter kit blueprints. Each blueprint is designed as a practical topic folder with documentation, implementation assets, architecture guidance, and community-ready learning material.
+Microsoft Data and AI Learning Blueprints is a community learning and implementation playbook for people who want to move beyond isolated product exercises. Each active blueprint starts with a fictional business problem and develops it into an explainable solution with architecture diagrams, setup guidance, source code, sample data, validation, security considerations, cost notes, and a demonstration path.
 
-## Why This Repo Uses Topic Folders
+The collection connects Microsoft Fabric, Power BI, Azure Data Factory, ADLS Gen2, Azure Databricks, Delta Lake, and enterprise delivery practices through realistic projects. The roadmap extends that foundation into semantic modeling, governance, CDC and streaming, Customer 360, Azure AI Search, Azure OpenAI, and governed conversational analytics.
 
-A single-topic repository is easy to start, but a topic-folder structure scales better for a public Microsoft Data and AI learning portfolio.
+## Why This Repository Exists
 
-| Benefit | Why It Matters |
+Official documentation is the source of truth for product behavior. It is not designed to be one end-to-end implementation for every business scenario. Short tutorials often demonstrate one feature but stop before quality, security, deployment, and operational concerns appear.
+
+This repository bridges that gap.
+
+| Need | How The Blueprints Address It |
 | --- | --- |
-| One community home | Stars, forks, issues, pull requests, and discussions can grow around one main repository. |
-| Clear topic separation | Each Microsoft topic has its own folder, README, examples, docs, and roadmap. |
-| Easier discovery | Learners can browse one repo and choose the path that matches their current goal. |
-| Better contribution flow | Contributors can add a topic, improve an existing blueprint, or submit focused examples. |
-| Portfolio friendly | The repo can support articles, YouTube demos, meetup sessions, and interview preparation across multiple Microsoft technologies. |
+| Learn a Microsoft service | Explain the mental model, prerequisites, and practical role in an architecture |
+| Build a portfolio project | Provide fictional scenarios, code, diagrams, validation, and demo scripts |
+| Prepare for an interview | Connect technical concepts to decisions, trade-offs, and working examples |
+| Run a proof of concept | Offer a structured starting point with production readiness guidance |
+| Create community content | Provide reproducible source material for articles, videos, workshops, and talks |
+| Contribute to open source | Offer scoped work across docs, tests, diagrams, data, and implementation assets |
 
-## Current Learning Blueprints
+## Blueprint Philosophy
 
-| Folder | Topic | Status | Best For |
-| --- | --- | --- | --- |
-| [fabric-data-engineering-blueprint](fabric-data-engineering-blueprint/README.md) | Microsoft Fabric Data Engineering | Active | Fabric beginners, Azure data engineers, Power BI developers, architects, students, and enterprise proof-of-concept teams |
-| [fabric-real-time-intelligence-blueprint](fabric-real-time-intelligence-blueprint/README.md) | Microsoft Fabric Real-Time Intelligence | Active | Streaming analytics learners, operations analytics teams, Fabric practitioners, KQL learners, and architects building real-time proofs of concept |
-| [azure-lakehouse-starter-kit](azure-lakehouse-starter-kit/README.md) | Azure Lakehouse Starter Kit | Active | Azure Data Factory, ADLS Gen2, Databricks, Delta Lake, Power BI, and enterprise lakehouse learners |
+A blueprint is more than a folder of samples. An active blueprint should include:
 
-## Featured Blueprint
+- A specific fictional business problem and measurable questions.
+- An end-to-end architecture with editable diagram source.
+- Setup steps, prerequisites, and expected outputs.
+- Versionable code, configuration, schemas, or notebooks.
+- Synthetic sample data safe for public use.
+- Tests or deterministic validation scripts.
+- Security, governance, cost, and troubleshooting guidance.
+- A demonstration script and extension exercises.
+- Current official documentation links and clear preview labels.
 
-### Microsoft Fabric Data Engineering Blueprint
+Read the full [topic README template](docs/topic-readme-template.md) and [blueprint release gate](docs/repo-expansion-plan.md#blueprint-release-gate).
 
-[Open the Fabric blueprint](fabric-data-engineering-blueprint/README.md)
+## Status Legend
 
-This blueprint teaches a complete Fabric data engineering flow:
-
-```text
-Source CSV files
--> Fabric Data Pipeline
--> Lakehouse Files
--> Bronze Delta tables
--> Silver cleaned Delta tables
--> Gold dimensional model
--> SQL Analytics Endpoint views
--> Power BI semantic model guidance
--> Business dashboard recommendations
-```
-
-It uses a **Retail Banking Customer Analytics** sample domain with customers, accounts, products, transactions, branches, and dates.
-
-### Microsoft Fabric Real-Time Intelligence Blueprint
-
-[Open the Real-Time Intelligence blueprint](fabric-real-time-intelligence-blueprint/README.md)
-
-This blueprint teaches a complete operational streaming analytics flow:
-
-```text
-Operational events
--> Fabric Eventstream
--> Eventhouse and KQL Database
--> Real-Time Dashboard
--> Fabric Activator alerts
--> Lakehouse historical analytics
--> Power BI reporting
--> AI-ready feature datasets
-```
-
-It uses a **Smart Logistics and Operations Monitoring** sample domain with shipment events, vehicle telemetry, warehouse sensor readings, customer app signals, order system events, and optional weather context.
-
-### Azure Lakehouse Starter Kit
-
-[Open the Azure Lakehouse starter kit](azure-lakehouse-starter-kit/README.md)
-
-This blueprint teaches a practical Azure Lakehouse implementation flow:
-
-```text
-Retail source data
--> Azure Data Factory metadata-driven ingestion
--> ADLS Gen2 raw landing zone
--> Azure Databricks Bronze Delta tables
--> Silver cleaned and validated Delta tables
--> Gold dimensional model and customer 360
--> Databricks SQL and Power BI consumption
--> CI/CD, governance, cost, and production readiness guidance
-```
-
-It uses a **Retail Customer Analytics** sample domain with customers, products, orders, order items, payments, inventory, and web activity.
-
-## Suggested Future Topics
-
-These folders can be added later using the same blueprint style:
-
-| Future Folder | Possible Topic |
+| Status | Meaning |
 | --- | --- |
-| `power-bi-semantic-modeling-blueprint/` | Power BI modeling, DAX, relationships, deployment, and governance |
-| `microsoft-purview-governance-blueprint/` | Catalog, lineage, classification, ownership, and governance operating model |
-| `azure-ai-data-blueprint/` | AI-ready data engineering, vector search, RAG data preparation, and responsible AI patterns |
+| **Active** | Contains a working or reviewable implementation, documentation, validation, and demo path |
+| **Planned** | Approved portfolio topic with documented scope, not yet presented as an implementation |
+| **Preview-dependent** | Uses a product capability whose current availability or prerequisites must be verified |
+| **Archived** | Preserved for reference but no longer maintained as a current implementation |
 
-## Repository Layout
+## Active Blueprints
+
+| Blueprint | Business Scenario | What You Build |
+| --- | --- | --- |
+| [Microsoft Fabric Data Engineering](fabric-data-engineering-blueprint/README.md) | Retail Banking Customer Analytics | Source-to-Lakehouse medallion architecture with pipelines, notebooks, Delta tables, SQL views, data quality, Power BI guidance, governance, and CI/CD |
+| [Microsoft Fabric Real-Time Intelligence](fabric-real-time-intelligence-blueprint/README.md) | Smart Logistics and Operations Monitoring | Event generation, Eventstream, Eventhouse, KQL analytics, Real-Time Dashboard, Activator patterns, Lakehouse history, and Power BI guidance |
+| [Azure Lakehouse Starter Kit](azure-lakehouse-starter-kit/README.md) | Retail Customer Analytics | Metadata-driven ADF ingestion, ADLS Gen2, Azure Databricks Bronze/Silver/Gold, Delta Lake, Unity Catalog guidance, SQL, tests, and CI/CD templates |
+
+## Planned Blueprint Portfolio
+
+Planned folders are created only when implementation work begins and the assets can meet the release gate.
+
+| Planned Folder | Primary Outcome | Fictional Scenario |
+| --- | --- | --- |
+| `microsoft-fabric-powerbi-semantic-modeling-blueprint` | Governed star schema, DAX, Direct Lake decisions, RLS, testing, and deployment | Commercial Performance Analytics |
+| `azure-databricks-unity-catalog-blueprint` | Catalog, storage, grants, isolation, fine-grained controls, audit, and lineage | Manufacturing Data Products |
+| `azure-data-engineering-cicd-blueprint` | Repeatable validation and Dev/Test/Prod promotion across Microsoft data assets | Enterprise Analytics Platform Delivery |
+| `azure-streaming-cdc-blueprint` | Resilient order and inventory CDC into Delta Lake | Retail Operations Change Processing |
+| `ai-ready-customer-360-blueprint` | Consent-aware customer data product for BI, features, and approved AI context | Omnichannel Customer 360 |
+| `azure-data-governance-purview-blueprint` | Catalog, classification, glossary, lineage, ownership, and access workflow | Retail Data Governance Office |
+| `azure-openai-rag-enterprise-blueprint` | Secured retrieval, grounding, citations, evaluation, feedback, and monitoring | Service Knowledge Assistant |
+| `fabric-data-agent-copilot-analytics-blueprint` | Governed data preparation, permissions, diagnostics, and evaluation for business Q&A | Service Operations Analytics |
+
+See the detailed [repository expansion plan](docs/repo-expansion-plan.md).
+
+## Learning Paths
+
+### Azure Lakehouse Engineer
+
+`Azure Lakehouse Starter Kit` -> `Streaming CDC` -> `Unity Catalog` -> `Data Engineering CI/CD`
+
+Build batch and streaming lakehouse skills, then add governance and automated delivery.
+
+### Microsoft Fabric Analytics Engineer
+
+`Fabric Data Engineering` -> `Fabric Real-Time Intelligence` -> `Power BI Semantic Modeling` -> `Fabric Data Agent Analytics`
+
+Connect historical engineering, operational events, trusted metrics, and governed conversational analytics.
+
+### Enterprise AI Data Architect
+
+`Azure Lakehouse Starter Kit` -> `AI-Ready Customer 360` -> `Purview Governance` -> `Azure OpenAI RAG` -> `Fabric Data Agent Analytics`
+
+Build AI experiences on governed data products with explicit evaluation and access controls.
+
+### Power BI And Semantic Model Engineer
+
+`Fabric Data Engineering` -> `Power BI Semantic Modeling` -> `Customer 360` -> `Data Agent Analytics` -> `CI/CD`
+
+Own the semantic contract from Gold data to business metrics, security, deployment, and question answering.
+
+### Data Governance And Platform Lead
+
+`Azure Lakehouse Starter Kit` -> `Fabric Data Engineering` -> `Purview Governance` -> `Unity Catalog` -> `CI/CD`
+
+Connect ownership and policy to enforceable controls, environment strategy, and release evidence.
+
+Open the complete [learning path guide](docs/learning-paths.md) for audiences, skills, projects, and outcomes.
+
+## Cross-Platform Architecture
+
+```mermaid
+flowchart LR
+    A["Fictional Business Sources<br/>batch, CDC, events, documents"] --> B["Ingestion And Streaming<br/>ADF, Fabric pipelines, Eventstream, Event Hubs"]
+    B --> C["Governed Data Products<br/>OneLake, ADLS Gen2, Delta Lake, Fabric, Databricks"]
+    C --> D["Semantic And Operational Analytics<br/>Power BI, SQL, KQL, dashboards, alerts"]
+    C --> E["Grounded AI Experiences<br/>Azure AI Search, Azure OpenAI, Fabric data agents"]
+    F["Governance And Identity<br/>Purview, Unity Catalog, Entra ID, data quality"] --> B
+    F --> C
+    F --> D
+    F --> E
+    G["Lifecycle And Operations<br/>GitHub, Azure DevOps, deployment pipelines, monitoring"] --> B
+    G --> C
+    G --> D
+    G --> E
+```
+
+The diagram describes the learning portfolio, not one recommended architecture for every workload. Each blueprint documents its own service choices and alternatives.
+
+## Architecture Gallery
+
+The [architecture gallery plan](docs/architecture-gallery.md) defines:
+
+- One versioned overview diagram per active topic.
+- Excalidraw source beside every PNG export.
+- Optional Draw.io and editable PowerPoint versions.
+- Mermaid diagrams for accessible README flows.
+- Naming, layout, trust boundary, and icon standards.
+- A diagram brief for every planned blueprint.
+
+## How To Use This Repository
+
+### Study Without Cloud Deployment
+
+1. Choose a learning path.
+2. Read the topic scenario and architecture.
+3. Inspect sample data, schemas, code, and expected outputs.
+4. Review security, cost, and production checklists.
+5. Complete the architecture and interview exercises.
+
+### Run A Blueprint
+
+1. Confirm prerequisites and current product availability.
+2. Use a development subscription, workspace, or capacity.
+3. Follow setup and parameterization instructions.
+4. Run validation before and after deployment.
+5. Execute the documented implementation order.
+6. Compare results with expected outputs.
+7. Follow cleanup steps to control cost.
+
+### Turn It Into A Portfolio Demo
+
+1. Rehearse the included demo script.
+2. Explain the business problem before showing services.
+3. Demonstrate one quality, security, or operational failure.
+4. Explain a design alternative and why it was not selected.
+5. Extend one dataset, metric, rule, or deployment check.
+6. Link your work to a stable release or commit.
+
+## Recommended Prerequisites
+
+Not every blueprint requires every item.
+
+- Basic SQL and data modeling concepts.
+- Introductory Python or PySpark for engineering topics.
+- Basic Power BI knowledge for semantic model topics.
+- Basic KQL knowledge for Real-Time Intelligence topics.
+- Git and pull request workflow familiarity.
+- A development Azure subscription or Microsoft Fabric capacity when deploying.
+- Permission to create the services listed by the selected blueprint.
+- Awareness of cloud cost, identity, and data handling responsibilities.
+
+Each topic README lists its exact prerequisites and safe cleanup steps.
+
+## Microsoft Services Covered
+
+| Capability | Services And Technologies |
+| --- | --- |
+| Microsoft Fabric | OneLake, Lakehouse, Warehouse, Data Pipelines, Notebooks, Spark, Eventstream, Eventhouse, KQL Database, Real-Time Dashboard, Activator |
+| Power BI | Semantic models, star schema, DAX, Direct Lake, RLS, deployment pipelines, governed reports |
+| Azure data engineering | Azure Data Factory, ADLS Gen2, Azure Databricks, Delta Lake, Event Hubs, Structured Streaming |
+| AI and search | Azure OpenAI, Azure AI Search, Azure Functions, API Management, Fabric data agent concepts |
+| Governance and identity | Microsoft Purview, Unity Catalog, Microsoft Entra ID, Key Vault, classification, lineage, data quality |
+| Delivery and operations | GitHub Actions, Azure DevOps, Fabric Git integration, deployment pipelines, Azure Monitor, Application Insights |
+
+See the full [Microsoft services map](docs/microsoft-services-map.md).
+
+## Demo Scenarios
+
+| Scenario | Demonstrates |
+| --- | --- |
+| Retail Banking Customer Analytics | Fabric Lakehouse engineering and Power BI-ready Gold data |
+| Smart Logistics Operations | Streaming events, KQL analytics, real-time dashboards, and alerts |
+| Retail Customer Analytics | Azure Lakehouse ingestion, Delta transformations, quality, governance, and CI/CD |
+| Commercial Performance Analytics | Planned semantic modeling, DAX, RLS, Direct Lake decisions, and deployment |
+| Manufacturing Data Products | Planned Unity Catalog governance and access controls |
+| Service Knowledge Assistant | Planned enterprise RAG retrieval, grounding, citations, evaluation, and feedback |
+| Omnichannel Customer 360 | Planned identity, consent, BI, feature, and approved AI context data products |
+| Retail Operations CDC | Planned streaming change processing, replay, reconciliation, and monitoring |
+
+All scenarios and datasets are fictional.
+
+## Repository Structure
 
 ```text
 .
 |-- README.md
 |-- CONTRIBUTING.md
 |-- CODE_OF_CONDUCT.md
+|-- CHANGELOG.md
 |-- LICENSE
 |-- .github/
-|   |-- ISSUE_TEMPLATE/
-|   `-- pull_request_template.md
+|-- docs/
 |-- fabric-data-engineering-blueprint/
-    |-- README.md
-    |-- docs/
-    |-- architecture/
-    |-- sample-data/
-    |-- notebooks/
-    |-- pipelines/
-    |-- sql/
-    |-- data-quality/
-    |-- semantic-model/
-    |-- governance/
-    |-- cicd/
-    |-- adr/
-    |-- interview-guide/
-    |-- roadmap/
-    |-- community/
-    `-- wiki/
 |-- fabric-real-time-intelligence-blueprint/
-    |-- README.md
-    |-- docs/
-    |-- diagrams/
-    |-- src/event-generator/
-    |-- schemas/
-    |-- kql/
-    |-- lakehouse/
-    |-- powerbi/
-    |-- samples/
-    |-- tests/
-    `-- wiki/
 `-- azure-lakehouse-starter-kit/
-    |-- README.md
-    |-- docs/
-    |-- diagrams/
-    |-- adf/
-    |-- databricks/
-    |-- sql/
-    |-- data/
-    |-- schemas/
-    |-- cicd/
-    |-- scripts/
-    |-- tests/
-    `-- wiki/
 ```
 
-## How To Use This Repository
+The target portfolio and recommended internal topic structure are documented in the [expansion plan](docs/repo-expansion-plan.md#4-target-repository-structure).
 
-1. Start at the topic table above.
-2. Open the blueprint folder that matches what you want to learn.
-3. Read that folder's README first.
-4. Follow the hands-on setup steps inside the topic folder.
-5. Use the issue templates to report problems or request new examples.
-6. Use the pull request template when contributing improvements.
+## Contributing
 
-## Contribution Model
+Contributions are welcome when they improve learner outcomes, implementation quality, architecture clarity, or enterprise readiness.
 
-Contributions are welcome when they improve learning value, implementation quality, or enterprise usefulness.
+High-value contributions include:
 
-Good contributions include:
+- Reproducible bug fixes.
+- Validation and test improvements.
+- Clearer setup and troubleshooting guidance.
+- Architecture diagrams with editable source.
+- Synthetic sample data and schemas.
+- Security, governance, cost, and monitoring examples.
+- DAX, SQL, KQL, Python, PySpark, pipeline, and deployment assets.
+- Beginner exercises and role-based demo improvements.
 
-- New Microsoft Data and AI learning blueprints.
-- Better diagrams and decision guides.
-- Beginner-friendly explanations.
-- Hands-on notebooks, scripts, sample data, or templates.
-- Governance, CI/CD, security, and production readiness examples.
-- Interview preparation questions and practical exercises.
-- Fixes for broken links, typos, unclear wording, or outdated guidance.
+Read [CONTRIBUTING.md](CONTRIBUTING.md), the [GitHub polish checklist](docs/github-polish-checklist.md), and the [community impact guide](docs/mvp-community-impact.md).
 
-Read [CONTRIBUTING.md](CONTRIBUTING.md) before opening a pull request.
+## Roadmap
 
-## Professional Note
+The first 30 days standardize navigation, documentation, validation, and active blueprint quality. Days 31 to 60 target the Power BI semantic modeling blueprint. Days 61 to 90 target the Unity Catalog blueprint.
 
-This repository is intended to grow into a serious Microsoft Data and AI learning collection. The goal is to keep each topic practical enough for learners, structured enough for practitioners, and thoughtful enough for architects and enterprise teams.
+Read the complete [90-day roadmap](docs/repo-roadmap.md).
 
-If a blueprint helps you, consider starring the repository, sharing it with other learners, and contributing improvements back to the community.
+## Articles, Talks, And Community Learning
+
+The repository includes a [ten-article series](docs/article-series.md), architecture presentation guidance, demo structures, and responsible impact tracking. Each public resource should link to a stable repository version and add explanation beyond the README.
+
+## Author And Community
+
+Maintained by [Ravikiran Pagidi](https://github.com/ravikiranpagidi) with contributions from the community.
+
+Contributor acknowledgment should reflect actual commits, reviews, issues, documentation, talks, and other verifiable work. The goal is to make Microsoft Data and AI learning more practical, transparent, and reusable.
+
+## Disclaimer
+
+This is a community learning repository and is not official Microsoft documentation. Microsoft product behavior, licensing, capacity requirements, regional availability, preview status, and security guidance can change. Verify current requirements in official Microsoft documentation before production use.
+
+If a blueprint helps, consider opening a discussion with what you learned, reporting a reproducible issue, or contributing a focused improvement.
